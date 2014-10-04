@@ -1,0 +1,32 @@
+Steps for executing
+
+1) WordCount
+hadoop jar <jar path> WordCount.WordCount
+Input Location : /input
+Output Location :  /finalOutput
+
+2) Coocurrence
+hadoop jar <jar path> sample.StripesDriver
+hadoop jar <jar path> sample.PairsDriver
+Input Location : /input
+Output Location : /output
+
+3) KMeans:
+hadoop jar <jar path> FollowersCountClustering.ClusterDriver
+Input Location : /input
+Output : /tempDir/<Folder with highest counter value>
+
+4) Shortest Path
+hadoop jar <jar path> ShortestPathCalculator.ShortestPathDriver
+Input : /input
+Output: /tempDir/<Folder with highest counter value>
+
+
+Source Codes attached
+1) Data generator : Classes to make the MR output suitable for visualization
+2) Tweet Analyzer : Main classes for the MR jobs
+3) Tweet Aggregator : For collecting tweet information.
+
+
+NOTE : The output values from the result have been represented in the project report . The actual result files could not be shared due to size limitations.
+
